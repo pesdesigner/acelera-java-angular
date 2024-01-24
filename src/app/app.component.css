@@ -1,0 +1,10 @@
+h1 {
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid green;
+}

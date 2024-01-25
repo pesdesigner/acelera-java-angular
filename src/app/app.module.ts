@@ -7,11 +7,16 @@ import { EmitterOneComponent } from './components/emitter-one/emitter-one.compon
 import { EmitterTwoComponent } from './components/emitter-two/emitter-two.component';
 import { FormsModule } from '@angular/forms';
 
+import { FirstComponentComponent } from './components/first-component/first-component.component';
+import { AddressListComponent } from './components/address-list/address-list.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     EmitterOneComponent,
-    EmitterTwoComponent
+    EmitterTwoComponent,
+    FirstComponentComponent,
+    AddressListComponent
   ],
   imports: [
     BrowserModule,

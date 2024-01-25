@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Pessoa } from '../emitter-one/emitter-one.component';
+import { Pessoa } from 'src/app/interfaces/Pessoa';
 
 @Component({
   selector: 'app-emitter-two',

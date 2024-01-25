@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./first-component.component.css']
 })
 export class FirstComponentComponent {
+
+  valorNumerico: number = 10;
+  valorTexto = "Olá";
+  valorObjeto = {
+    nome: "José",
+    idade: 20
+  }
+  valorVetor = ["...", 1, 2];
+
   address = [
     {
       addressType: "rua",
@@ -28,7 +37,7 @@ export class FirstComponentComponent {
   ];
   title = {
     fontSize: 20,
-    fontColor: "blue"
+    fontColor: "#347D39"
   }
 
 }

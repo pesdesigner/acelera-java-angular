@@ -11,12 +11,12 @@ table th, td {
 }
 
 table th {
-  background-color: forestgreen;
+  background-color: #347D39;
 }
 
 p {
   display: block;
-  background-color: #eee;
+  background-color: #ccc;
   padding: 5px;
   text-transform: uppercase;
   font-weight: 700;
@@ -24,7 +24,7 @@ p {
 }
 
 .striped {
-  background-color: #eee;
+  background-color: #ccc;
 }
 
 .title-underline {

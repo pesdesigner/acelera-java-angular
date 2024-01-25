@@ -1,21 +1,24 @@
-import { Component, Input } from '@angular/core';
-
-type address = {
-  addressType: string
-  addressName: string
-  address: string
-  district: string
-  zipCode: string
-  city: string
-  state: string
-}
+import { Component, Input, OnInit } from '@angular/core';
+import { Endereco } from 'src/app/interfaces/Endereco';
 
 @Component({
   selector: 'app-address-list',
   templateUrl: './address-list.component.html',
   styleUrls: ['./address-list.component.css']
 })
-export class AddressListComponent {
-  @Input() address: address[] = [];
+export class AddressListComponent implements OnInit {
+  @Input() address: Endereco[] = [];
+
+  style = {
+    fontColor: "red",
+    fontSize: "25px"
+  }
+
+  exibirEndereco: boolean = false;
+
+  ngOnInit(): void {
+    this.exibirEndereco = this.address.length > 0
+  }
+
   classTitle = ["title-underline"];
 }

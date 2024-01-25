@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-export interface Pessoa {
-  nome: string;
-  idade: string;
-}
+import { Pessoa } from 'src/app/interfaces/Pessoa';
 
 @Component({
   selector: 'app-emitter-one',
@@ -13,7 +9,7 @@ export interface Pessoa {
 export class EmitterOneComponent {
   pessoa: Pessoa[] = [];
 
-  onAdicionarPessoa(pessoa: Pessoa) {
+  onAdicionarPessoa(pessoa: Pessoa): void {
     this.pessoa.push(pessoa);
   }
 }

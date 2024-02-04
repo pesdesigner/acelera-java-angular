@@ -1,18 +1,48 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EmitterOneComponent } from './components/emitter-one/emitter-one.component';
+import { EmitterTwoComponent } from './components/emitter-two/emitter-two.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BootstrapModule } from './app-bootstrap/app-bootstrap.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FirstComponentComponent } from './components/first-component/first-component.component';
+import { AddressListComponent } from './components/address-list/address-list.component';
+import { PipesComponent } from './components/pipes/pipes.component';
+import localePT from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+import { ProdutoListaComponent } from './components/produto-lista/produto-lista.component';
+import { ProdutoDetalhesComponent } from './components/produto-detalhes/produto-detalhes.component';
+import { ClienteListaComponent } from './components/cliente-lista/cliente-lista.component';
+import { ClienteCadastroComponent } from './components/cliente-cadastro/cliente-cadastro.component';
+registerLocaleData(localePT);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmitterOneComponent,
+    EmitterTwoComponent,
+    FirstComponentComponent,
+    AddressListComponent,
+    PipesComponent,
+    ProdutoListaComponent,
+    ProdutoDetalhesComponent,
+    ClienteListaComponent,
+    ClienteCadastroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    BootstrapModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

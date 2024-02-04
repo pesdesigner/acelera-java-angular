@@ -1,0 +1,11 @@
+<div class="cp">
+    <h3>{{ 'título pipe operator' | titlecase }}</h3>
+    <p>{{'caixa alta' | uppercase}}</p>
+    <p>{{'caixa baixa' | lowercase}}</p>
+    <p>Data atual: {{ dataAtual | date: 'fulldate'}}</p>
+    <p>Data atual: {{ dataAtual | date: 'dd/MM/yyyy'}}</p>
+    <p>Data atual: {{ dataAtual | date: 'dd/MM/yyyy HH:mm:ss'}}</p>
+    <p>Valor total: {{'150.69' | currency: 'R$'}}</p>
+    <p>Valor total: {{'150.69985' | currency: 'R$':'symbol':'0.2-2'}}</p>
+    <p>Valor total: {{'150.69985' | currency: 'R$':'symbol':'0.1-2'}}</p>
+</div>

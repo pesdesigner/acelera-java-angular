@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+}
+
+table th, td {
+  border: 1px solid #cccccc;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px;
+}
+
+table th {
+  background-color: #347D39;
+}
+
+p {
+  display: block;
+  background-color: #ccc;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.striped {
+  background-color: #ccc;
+}
+
+.title-underline {
+  text-decoration: underline;
+}

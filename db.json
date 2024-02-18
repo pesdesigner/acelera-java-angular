@@ -1,13 +1,13 @@
 {
   "cliente": [
     {
-      "id": 102030,
+      "id": "102030",
       "nome": "Paulo José",
       "email": "paulo@gmail.com",
       "telefone": "11923456466"
     },
     {
-      "id": 203040,
+      "id": "203040",
       "nome": "Areli Santos",
       "email": "arelio@gmail.com",
       "telefone": "11789056466"
@@ -16,7 +16,33 @@
       "nome": "Paulo Eduardo",
       "telefone": "Paulo Eduardo",
       "email": "pauloteste@gmail.com",
-      "id": 203041
+      "id": "203041"
+    },
+    {
+      "id": "2465",
+      "nome": "Pedro Souza",
+      "telefone": "Pedro Souza",
+      "email": "pedrosouza@email.com"
+    },
+    {
+      "nome": "Alex",
+      "telefone": "Alex",
+      "email": "alex@email.com",
+      "id": "XIZsu-3"
+    },
+    {
+      "nome": "Pedro Souza",
+      "telefone": "Pedro Souza",
+      "email": "pedro@email.com",
+      "id": "aYoM_lg"
+    }
+  ],
+  "users": [
+    {
+      "email": "teste@teste.com",
+      "password": "$2a$10$KCiD1Z.iE3sBTFCQGCiLTeGZaYQ19EuSvbxAfet4jZ97JvQuFlWPa",
+      "name": "Usuario Teste",
+      "id": 1
     }
   ]
 }

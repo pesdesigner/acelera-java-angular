@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-custom-header',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class CustomHeaderComponent {
   isCollapsed = true;
+
+  constructor(private router: Router){}
+
+  logout(){
+    localStorage.clear()
+    this.router.navigate(['']);
+  }
 }

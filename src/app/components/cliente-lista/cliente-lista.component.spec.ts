@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ClienteListaComponent } from './cliente-lista.component';
+import { ClienteService } from 'src/app/services/cliente.service';
+import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('ClienteListaComponent', () => {
   let component: ClienteListaComponent;
@@ -8,7 +11,10 @@ describe('ClienteListaComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ClienteListaComponent]
+      imports: [HttpClientModule],
+      declarations: [ClienteListaComponent],
+      providers: [ClienteService],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
     fixture = TestBed.createComponent(ClienteListaComponent);
     component = fixture.componentInstance;

@@ -1,9 +1,17 @@
-<div class="container-fluid">
-  <h3>Lista de clientes</h3>
+<app-custom-header></app-custom-header>
+
+<div class="container">
+  <div class="alert alert-primary mt-5" role="alert">
+    <h3>Lista de clientes</h3>
+  </div>
+ </div>
+
+<div class="container">
+
   <div class="row">
     <div class="col-sm-12">
       <div class="alert alert-primary">
-        Para adicionar um novo cliente <button class="btn btn-primary btn-sm">Clique aqui</button>
+        Para adicionar um novo cliente <button routerLink="/cadastro-cliente" class="btn btn-primary btn-sm">Clique aqui</button>
       </div>
     </div>
   </div>
@@ -35,5 +43,6 @@
     </div>
   </div>
 </div>
+<app-custom-footer></app-custom-footer>
 
 

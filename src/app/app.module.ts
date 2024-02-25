@@ -18,6 +18,11 @@ import { ProdutoListaComponent } from './components/produto-lista/produto-lista.
 import { ProdutoDetalhesComponent } from './components/produto-detalhes/produto-detalhes.component';
 import { ClienteListaComponent } from './components/cliente-lista/cliente-lista.component';
 import { ClienteCadastroComponent } from './components/cliente-cadastro/cliente-cadastro.component';
+import { CustomHeaderComponent } from './components/custom-header/custom-header.component';
+import { CustomFooterComponent } from './components/custom-footer/custom-footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { HttpInterceptorProviders } from './interceptors/http-interceptor';
 registerLocaleData(localePT);
 
 @NgModule({
@@ -31,7 +36,11 @@ registerLocaleData(localePT);
     ProdutoListaComponent,
     ProdutoDetalhesComponent,
     ClienteListaComponent,
-    ClienteCadastroComponent
+    ClienteCadastroComponent,
+    CustomHeaderComponent,
+    CustomFooterComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +51,12 @@ registerLocaleData(localePT);
     BootstrapModule,
     ReactiveFormsModule
   ],
-  providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [
+    HttpInterceptorProviders,
+    {
+      provide: LOCALE_ID, useValue: 'pt-BR'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
